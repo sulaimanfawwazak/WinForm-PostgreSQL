@@ -1,0 +1,17 @@
+# temporary files
+.vs/
+Junpro8/.vs/
+Junpro8/bin/
+Junpro8/obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Build results
+*.exe
+*.dll
+*.pdb
+
+# Logs
+*.log
