@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
-using System.Data;
-using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
 
@@ -23,7 +21,7 @@ namespace Junpro8
         }
 
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=eben1276@;Database=Junpro8";
+        string connstring = "Host=localhost;port=5432;Username=postgres;Password=informatika;Database=ListOfName";
 
         //Display Data on DataGridView Component
         public DataTable dt;
@@ -169,6 +167,12 @@ namespace Junpro8
                 r = null;
             }
 
+        }
+
+        private void btnGenerateQR_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2(this);
+            f2.Show();
         }
     }
 }

@@ -43,6 +43,7 @@
             this._alamat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._no_handphone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLoaddata = new System.Windows.Forms.Button();
+            this.btnGenerateQR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,7 +136,7 @@
             this._no_handphone});
             this.dgvData.Location = new System.Drawing.Point(67, 179);
             this.dgvData.Name = "dgvData";
-            this.dgvData.Size = new System.Drawing.Size(528, 204);
+            this.dgvData.Size = new System.Drawing.Size(636, 204);
             this.dgvData.TabIndex = 9;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             // 
@@ -169,11 +170,22 @@
             this.btnLoaddata.UseVisualStyleBackColor = true;
             this.btnLoaddata.Click += new System.EventHandler(this.btnLoaddata_Click);
             // 
+            // btnGenerateQR
+            // 
+            this.btnGenerateQR.Location = new System.Drawing.Point(610, 46);
+            this.btnGenerateQR.Name = "btnGenerateQR";
+            this.btnGenerateQR.Size = new System.Drawing.Size(93, 63);
+            this.btnGenerateQR.TabIndex = 11;
+            this.btnGenerateQR.Text = "Generate QR";
+            this.btnGenerateQR.UseVisualStyleBackColor = true;
+            this.btnGenerateQR.Click += new System.EventHandler(this.btnGenerateQR_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGenerateQR);
             this.Controls.Add(this.btnLoaddata);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.btnDelete);
@@ -195,10 +207,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtAlamat;
-        private System.Windows.Forms.TextBox txtNo_handphone;
         private System.Windows.Forms.Label blb_Nama;
         private System.Windows.Forms.Label lblAlamat;
         private System.Windows.Forms.Label lblNo_handphone;
@@ -211,6 +219,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn _alamat;
         private System.Windows.Forms.DataGridViewTextBoxColumn _no_handphone;
         private System.Windows.Forms.Button btnLoaddata;
+        private System.Windows.Forms.Button btnGenerateQR;
+        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtAlamat;
+        public System.Windows.Forms.TextBox txtNo_handphone;
     }
 }
 
